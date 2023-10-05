@@ -115,7 +115,7 @@ const WeatherReport = () => {
             <img src={cloud_Icon} alt=''/>
         </div>
         {(error!=="")?<div style={{backgroundColor:"white",marginLeft:"30px",marginRight:"30px",height:"40px",color:"red",textAlign:"center",fontSize:"20px"}}><span>{error}</span></div>:""}
-       <div className='weather-temp'>{cityDetails.temperature} {(dial!==1)?"°c":"°F"}<button onClick={(dial!==1)?celToFeh:fehtocel} style={{marginLeft:"20px"}}>{name}</button></div>
+       <div className='weather-temp'>{cityDetails.temperature} {(dial!==1)?"°c":"°F"}<button onClick={(dial!==1)?celToFeh:fehtocel} style={{marginLeft:"20px",backgroundColor:"green"}}>{name}</button></div>
             <div className='weather-location'>{cityDetails.location}</div>
             <div className='data-container'>
                 <div className='element'>
